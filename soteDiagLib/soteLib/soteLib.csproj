@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\Test_Program\F57416M4160C\FT1\soteLib.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46557777-7C76-468C-B623-62C803A69014}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>soteLib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>soteLib</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="soteDB.cs" />
+    <Compile Include="soteUtils.cs" />
+    <Compile Include="soteSFIS.cs" />
+    <Compile Include="SynchronousSocketClient.cs" />
+    <Compile Include="frmPass.cs" />
+    <Compile Include="DiolanU2C.cs" />
+    <Compile Include="CommPort.cs" />
+    <Compile Include="TestItem.cs" />
+    <Compile Include="TestNicPort.cs" />
+    <Compile Include="TestIteration.cs" />
+    <Compile Include="TestLog.cs" />
+    <Compile Include="B57diagLogParser.cs" />
+    <Compile Include="SynchronousSocketListener.cs" />
+    <Compile Include="frmFail.cs" />
+    <Compile Include="IniFile.cs" />
+    <Compile Include="soteSFIS2\SfisConnectionChanged.cs" />
+    <Compile Include="soteSFIS2\SfisConnectionError.cs" />
+    <Compile Include="soteSFIS2\SfisLog.cs" />
+    <Compile Include="soteSFIS2\LogDetailLevels.cs" />
+    <Compile Include="soteSFIS2\CmNames.cs" />
+    <Compile Include="soteSFIS2\IsoteSFIS2.cs" />
+    <Compile Include="soteSFIS2\soteSFIS2.cs" />
+    <Compile Include="soteSFIS2\soteSFIS2Fxcn.cs" />
+    <Compile Include="soteSFIS2\soteSFIS2FxcnTj.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmFail.resx" />
+    <EmbeddedResource Include="frmPass.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

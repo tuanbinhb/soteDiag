@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\Test_Program\F57416M4160C\FT1\soteDiag.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C2D1C86-1202-470A-AA34-A4A485AC2BBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>soteDiag</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>3.2.3.9</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>soteDiag</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Be.Windows.Forms.HexBox">
+      <HintPath>lib\Be.Windows.Forms.HexBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Config">
+      <HintPath>lib\Config.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="dln.net">
+      <HintPath>lib\dln.net.dll</HintPath>
+    </Reference>
+    <Reference Include="soteLib">
+      <HintPath>lib\soteLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Util\Constant.cs" />
+    <Compile Include="Util\ArrayUtil.cs" />
+    <Compile Include="Util\FileUtil.cs" />
+    <Compile Include="Util\XmlUtil.cs" />
+    <Compile Include="frmPassword.cs" />
+    <Compile Include="NewMessageBox.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="frmUploadTestLog.cs" />
+    <Compile Include="soteDiag.cs" />
+    <Compile Include="frmSNMAC.cs" />
+    <Compile Include="clsUUT.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Default\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmPassword.resx" />
+    <EmbeddedResource Include="frmSNMAC.resx" />
+    <EmbeddedResource Include="frmUploadTestLog.resx" />
+    <EmbeddedResource Include="NewMessageBox.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="soteDiag.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

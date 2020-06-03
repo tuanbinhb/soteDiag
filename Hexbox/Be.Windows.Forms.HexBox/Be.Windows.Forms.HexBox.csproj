@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\Test_Program\F57416M4160C\FT1\Be.Windows.Forms.HexBox.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F6B0827-D436-42CF-BFCF-1367D8EB8AD0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Be.Windows.Forms.HexBox</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.4.7.13476</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Be.Windows.Forms</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBlock.cs" />
+    <Compile Include="FileDataBlock.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="MemoryDataBlock.cs" />
+    <Compile Include="HexCasing.cs" />
+    <Compile Include="IByteProvider.cs" />
+    <Compile Include="DynamicByteProvider.cs" />
+    <Compile Include="IByteCharConverter.cs" />
+    <Compile Include="DefaultByteCharConverter.cs" />
+    <Compile Include="EbcdicByteCharProvider.cs" />
+    <Compile Include="HexBox.cs" />
+    <Compile Include="DataMap.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="FileByteProvider.cs" />
+    <Compile Include="ByteCollection.cs" />
+    <Compile Include="BuiltInContextMenu.cs" />
+    <Compile Include="DynamicFileByteProvider.cs" />
+    <Compile Include="BytePositionInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HexBox.bmp" />
+    <EmbeddedResource Include="HexBox.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
